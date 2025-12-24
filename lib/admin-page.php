@@ -211,7 +211,7 @@ function classicpress_show_admin_page() {
 ?>
 	<h2><?php esc_html_e( 'Feedback and Support', 'switch-to-classicpress' ); ?></h2>
 	<p class="cp-migration-info">
-		<?php esc_html_e( 'Do you have feedback about this plugin, or about ClassicPress itself? Need help with something? We'd love to know what you think!', 'switch-to-classicpress' ); ?>
+		<?php esc_html_e( 'Do you have feedback about this plugin, or about ClassicPress itself? Need help with something? We\'d love to know what you think!', 'switch-to-classicpress' ); ?>
 	</p>
 	<ul class="cp-migration-info">
 		<li><?php printf(
@@ -350,7 +350,7 @@ if (strpos($cp_version, 'migration')) {
 ?>
 		<div class="notice notice-error">
 			<p>
-				<?php esc_html_e( 'Sorry, this plugin doesn't support sites hosted on WordPress.com.', 'switch-to-classicpress' ); ?>
+				<?php esc_html_e( 'Sorry, this plugin doesn\'t support sites hosted on WordPress.com.', 'switch-to-classicpress' ); ?>
 			</p>
 			<p>
 				<?php echo wp_kses_post(
@@ -367,7 +367,7 @@ if (strpos($cp_version, 'migration')) {
 ?>
 		<div class="notice notice-error">
 			<p>
-				<?php esc_html_e( 'Sorry, you're not allowed to perform this action.', 'switch-to-classicpress' ); ?>
+				<?php esc_html_e( 'Sorry, you\'re not allowed to perform this action.', 'switch-to-classicpress' ); ?>
 			</p>
 			<p>
 				<?php esc_html_e( 'Please contact a site administrator for more information.', 'switch-to-classicpress' ); ?>
@@ -716,7 +716,7 @@ function classicpress_show_migration_controls() {
 	<h2 class="cp-migration-info cp-migration-ready">
 		<?php echo wp_kses_post(
 			sprintf(
-				__( 'It looks like you're ready to switch to ClassicPress v%s!', 'switch-to-classicpress' ),
+				__( 'It looks like you\'re ready to switch to ClassicPress v%s!', 'switch-to-classicpress' ),
 				$cp_cv
 			)
 		); ?>
@@ -791,7 +791,7 @@ function classicpress_show_migration_blocked_info() {
 	}
 ?>
 	<h2 class="cp-migration-info cp-emphasis">
-		<?php esc_html_e( 'Sorry, we can't switch this site to ClassicPress at this time.', 'switch-to-classicpress' ); ?>
+		<?php esc_html_e( 'Sorry, we can\'t switch this site to ClassicPress at this time.', 'switch-to-classicpress' ); ?>
 	</h2>
 
 	<p class="cp-migration-info">
