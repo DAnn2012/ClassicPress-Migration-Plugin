@@ -723,14 +723,14 @@ function classicpress_show_migration_controls() {
 	</h2>
 	<p class="cp-migration-info">
 		<?php echo wp_kses_post(
-			__( '<strong class="cp-emphasis">Please make a Complete Backup of your Site Files and Database before you continue!</strong>.', 'switch-to-classicpress' )
+			'<strong class="cp-emphasis">' . __( 'Please make a Complete Backup of your Site Files and Database before you continue!', 'switch-to-classicpress' ) . '</strong>'
 		); ?>
 	</p>
 	<p class="cp-migration-info">
 		<?php echo wp_kses_post(
-			__( '<strong class="cp-emphasis">After the Initial Migration, you must visit the Updates Page and Press the Re-Install Now button!</strong>
-			<br>This is needed to complete the switch to ClassicPress and to insure you get the latest updates.', 'switch-to-classicpress' )
+			'<strong class="cp-emphasis">' . __( 'After the Initial Migration, you must visit the Updates Page and Press the Re-Install Now button!', 'switch-to-classicpress' ) . '</strong><br>'
 		); ?>
+		<?php esc_html_e( 'This is needed to complete the switch to ClassicPress and to insure you get the latest updates.', 'switch-to-classicpress' ) ; ?>
 	</p>
 	<p class="cp-migration-info">
 		<?php esc_html_e( 'Once you click the button below, the migration process will start.', 'switch-to-classicpress' ); ?>
