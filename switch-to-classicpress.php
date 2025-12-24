@@ -95,8 +95,7 @@ add_action( 'admin_head', 'classicpress_ensure_network_activated' );
 function classicpress_deactivated_notice() {
 	echo '<div class="error"><p>';
 	wp_kses_post(
-		'The "Switch to ClassicPress" plugin must be <strong>network activated</strong> on multisite installations.',
-		'switch-to-classicpress'
+		__( 'The "Switch to ClassicPress" plugin must be <strong>network activated</strong> on multisite installations.', 'switch-to-classicpress' )
 	);
 	echo '</p><p>';
 	esc_html_e(
@@ -209,10 +208,7 @@ function classicpress_migration_parameters() {
 		if ( ! is_array( $cp_api_parameters ) ) {
 			return new WP_Error(
 				'classicpress_server_error',
-				__(
-					'Could not communicate with the ClassicPress API server',
-					'switch-to-classicpress'
-				),
+				__( 'Could not communicate with the ClassicPress API server', 'switch-to-classicpress' ),
 				array( 'status' => $status )
 			);
 		}
@@ -252,10 +248,7 @@ if ( ! $cp_versions ) {
 	if ( ! is_array( $cp_versions ) ) {
 		return new WP_Error(
 			'classicpress_server_error',
-			__(
-				'Could not communicate with the ClassicPress API server',
-				'switch-to-classicpress'
-			),
+			__( 'Could not communicate with the ClassicPress API server', 'switch-to-classicpress' ),
 			array( 'status' => $status )
 		);
 	}
